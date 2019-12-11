@@ -1,0 +1,432 @@
+img {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+img[data-src] {
+    opacity: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+.container {
+    width: 100%;
+}
+.wrapper {
+    width: 95%;
+}
+
+
+/* ===== flex ===== */
+.fl {
+    display: flex;
+}
+.fl-col {
+    display: flex;
+    flex-direction: column;
+}
+.fl-row {
+    display: flex;
+    flex-direction: row;
+}
+.fl-ai-c {
+    align-items: center;
+}
+.fl-jc-c {
+    justify-content: center;
+}
+.fl-jc-sb {
+    justify-content: space-between;
+}
+.fl-jc-sa {
+    justify-content: space-around;
+}
+.fl-wrap {
+    flex-wrap: wrap;
+}
+.fl-grow-1 {
+    flex-grow: 1;
+}
+
+/* ===== /flex ===== */
+
+.login-form {
+    width: 60%;
+}
+
+.login-form img {
+    height: 60px;
+}
+
+.login-form form {
+    width: 100%;
+}
+
+.login-form h3 {
+    text-align: center;
+    color: #003569;
+    margin-bottom: 10px;
+}
+
+.login-form span {
+    font-size: .75em;
+    color: #909090;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-form span a {
+    color: #003569;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ===== screens ===== */
+
+.screen {
+    width: 100%;
+    position: absolute;
+    min-height: 100%;
+}
+
+.screen header {
+    height: 45px;
+    padding: 10px 0 7px;
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.screen header img {
+    height: 40px;
+    margin-top: 7px;
+}
+
+/* ===== /screens ===== */
+
+/* ===== bubls ===== */
+
+.publ__item {
+    width: 100%;
+}
+
+.publ__header {
+    margin-right: auto;
+    margin-left: 15px;
+    height: 70px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.avatar {
+    border-radius: 100px;
+    height: 50px;
+}
+
+.avatar-x2{
+    height: 90px;
+}
+
+.publ__header .info {
+
+    margin-left: 10px;
+    width: 75%;
+}
+.login {
+    font-size: 13px;
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 5px;
+}
+.place {
+    font-size: .7em;
+}
+
+.time {
+    font-size: .7em;
+    color: #999;
+}
+
+.publ__photo {
+    object-fit: contain;
+}
+
+.publ__photo img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.publ__actions {
+    width: 21%;
+    margin: 5px 0;
+}
+
+.publ__like {
+    margin: 10px 0;
+    font-size: .9em;
+    font-weight: bold;
+}
+
+.publ__info {
+    padding: 0 16px;
+}
+
+.wrapper .login,
+.publ__comments .comment__item .login{
+    text-decoration: none;
+}
+
+.wrapper .description,
+.publ__comments .comment__item .note{
+    font-size: .8em;
+}
+
+.publ__comments .comment__item{
+    margin-bottom: 6px;
+}
+
+.publ__footer {
+    height: 30px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* ===== /bubls ===== */
+
+/* ===== tabs ===== */
+
+.tabs {
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+    height: 58px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.tab {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.tab a{
+    color: black;
+}
+
+.upload-form {
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: fixed;
+    bottom: 50px;
+    left: 3%;
+    width: 94%;
+    height:400px;
+    background-color: #fff;
+}
+
+.upload-form img {
+    height: 240px;
+}
+
+.preview {
+    height: 200px;
+}
+
+.preview__photo img {
+    margin: 10px;
+    width: 95%;
+    border-radius: 20px;
+}
+
+.upload-form form {
+    width: 80%;
+    height: 80%;
+}
+
+.upload-form form textarea {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #3897f0;
+    resize: none;
+    outline: none;
+    height: 40px;
+}
+
+textarea:focus {
+    background-color: #e4e4e4;
+}
+/* ===== /tabs ===== */
+
+/* ===== animation ===== */
+.upload-form {
+    opacity: 0;
+    transform: translateY(460px);
+    transition: .5s;
+}
+
+.open {
+    transform: translateY(-9px);
+    opacity: 1;
+    transition: .5s;
+}
+
+/* ===== / animation ===== */
+
+/*======= profile ======*/
+
+.header {
+    width: 100%;
+    height: 58px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.header .page {
+    font-size: .9em;
+    font-weight: bold;
+    color: #262626;
+}
+
+.profile__info {
+    margin: 30px 16px 24px;
+}
+
+.sidebar {
+    margin-left: 28px;
+    flex-grow: 1;
+}
+
+.sidebar .login {
+    font-size: 1.6em;
+    font-weight: lighter;
+    color: #262626;
+}
+
+.profile__board {
+    height: 58px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.profile__board .board {
+    height: 100%;
+    flex-grow: 1;
+}
+.profile__board .num {
+    font-weight: bold;
+}
+
+.profile__publications {
+
+}
+
+.profile__publications .publ {
+    width: 33%;
+    height: 33vw;
+
+}
+.profile__publications .publ img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.user button {
+    width: 40%;
+}
+
+.user .second__name {
+    font-size: .7em;
+    color: #999;
+}
+
+
+/*======= /profile ======*/
+
+/* ===== input =====*/
+
+.heart {
+    color: red;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 7px;
+    width: 100%;
+    background: #3897f0;
+    color: #fff;
+    outline: none;
+    font-weight: bold;
+}
+
+.btn-linear {
+    color: black;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+}
+
+.btn-comment {
+    background-color: #fff;
+    color: #3897f0;
+    padding: 0px 0px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+    border-bottom: 1px solid #3897f0;
+}
+
+.load {
+    display: block;
+    width: 100%;
+    margin: 8px 0px;
+    color: #939393;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.upload {
+    padding: 10px 7px;
+    background-color: #3897f0;
+    color: #fff;
+    border-radius: 4px;
+}
+.upload label {
+    display: block;
+    font-weight: bold;
+    font-size: .9em;
+    width: 100%;
+    height: 100%;
+}
+
+.upload label span {
+    color: #fff;
+}
+
+input {
+    padding: 10px 7px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #3897f0;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input:focus {
+    background-color: #fafafa;
+}
